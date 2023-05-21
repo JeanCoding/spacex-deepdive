@@ -6,6 +6,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Include all fonts */
+
 @font-face {
     font-family: "Agrandir";
     src: url("../fonts/Agrandir-GrandHeavy.woff2") format("woff2"), url("../fonts/Agrandir-GrandHeavy.woff") format("woff");
@@ -76,6 +78,8 @@ html {
     background: #6BC3FE;
     box-shadow: 0px 4px 23px rgba(107, 195, 254, 0.58);
 }
+
+/* Container Settings */
 
 .container {
     max-width: 1280px;

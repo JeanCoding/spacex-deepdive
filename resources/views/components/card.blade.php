@@ -1,14 +1,16 @@
+{{-- Single flight card --}}
+
 <div class="bg-[#272727] p-7 rounded-[20px]  w-full lg:w-[414px] card">
     <div class="flex justify-between uppercase">
         <div>
             <img src="{{ asset('/images/plane_up.svg') }}" class="mb-3 w-8">
-            <p class="text-xs">{{ $flight->departure->name }}<p> <!-- TODO; uit database laten komen -->
-            <h3 class="text-2xl">{{ substr($flight->departure->name, 0, 3) }}</h3> <!-- TODO; uit database laten komen -->
+            <p class="text-xs">{{ $flight->departure->name }}<p> 
+            <h3 class="text-2xl">{{ substr($flight->departure->name, 0, 3) }}</h3> 
         </div>
         <div>
             <img src="{{ asset('/images/plane_down.svg') }}" class="mb-3 w-8">
-            <p class="text-xs">{{ $flight->arrival->name }}<p> <!-- TODO; uit database laten komen -->
-            <h3 class="text-2xl">{{ substr($flight->arrival->name, 0, 3) }}</h3> <!-- TODO; uit database laten komen -->
+            <p class="text-xs">{{ $flight->arrival->name }}<p> 
+            <h3 class="text-2xl">{{ substr($flight->arrival->name, 0, 3) }}</h3> 
         </div>
     </div>
 
@@ -19,7 +21,7 @@
 
     <div class="flex justify-between relative">
         <div class="text-xs font-bold">
-            <p>{{ $flight->date }}</p> <!-- TODO; uit database laten komen -->
+            <p>{{ $flight->date }}</p>
             <p class="text-[#CDCDCD] mt-2 text-[8px] poppins">Date</p>
         </div>
         <div class="absolute left-1/2 transform -translate-x-1/2">

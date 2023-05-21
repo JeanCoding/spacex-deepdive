@@ -1,3 +1,5 @@
+{{-- CO2 footprint page --}}
+
 @extends('components.layouts.booking')
 @section('content')
 <h2 style="line-height: 36px;" class="text-[30px] mb-10">STEP 3. <br>YOUR <span class="text-[#6BC3FE]">CO2</span> FOOTPRINT: </h2>

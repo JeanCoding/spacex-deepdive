@@ -1,3 +1,5 @@
+{{-- Transport option page --}}
+
 @extends('components.layouts.booking')
 @section('content')
 <h2 class="text-[30px] mb-[12px]">STEP 2.</h2>

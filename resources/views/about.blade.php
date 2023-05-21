@@ -8,6 +8,9 @@
         @vite('resources/css/app.css')
     </head>
     <body class="bg-black uppercase text-white">
+
+        {{-- Hero section --}}
+
         <section class="pt-8 pb-12 lg:pb-0 lg:h-screen overflow-y-hidden" id="hero">
             @include('components.navigation')
             <div>
@@ -17,6 +20,9 @@
                 </div>
             </div>
         </section>
+
+        {{-- Start info section about Rocket --}}
+
         <section>
             <div class="py-24 container lg:flex justify-between">
                 <div>
@@ -48,6 +54,8 @@
 
         </section>
 
+        {{-- Start CTA section for Starport --}}
+
         <section id="about-background-2">
             <div class="container py-48 lg:py-72" data-aos="fade-right" data-aos-duration="500" data-aos-anchor-placement="top-center">
                 <h2 class="text-[30px] lg:text-[50px]">Our<br />Starport<br />Locations</h2>
@@ -56,6 +64,8 @@
                 </a>
             </div>
         </section>
+
+        {{-- Start info section about Spacesuit --}}
 
         <section>
             <div class="!mt-12 !lg:mt-[-50px] container lg:flex justify-between items-center">

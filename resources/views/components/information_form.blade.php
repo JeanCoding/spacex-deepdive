@@ -1,3 +1,5 @@
+{{-- Passenger Information Form --}}
+
 <form method="GET" action="{{ route('booking.finish', ['id' => $id]) }}#white-box">
 
     <div class="flex gap-5 mb-5">
