@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Agrandir";
+    src: url("../fonts/Agrandir-GrandHeavy.woff2") format("woff2"), url("../fonts/Agrandir-GrandHeavy.woff") format("woff");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Agrandir";
+    src: url("../fonts/Agrandir-WideBlackItalic.woff2") format("woff2"), url("../fonts/Agrandir-WideBlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Agrandir-Narrow";
+    src: url("../fonts/Agrandir-Narrow.woff2") format("woff2"), url("../fonts/Agrandir-Narrow.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Agrandir-Narrow-Bold";
+    src: url("../fonts/Agrandir-TextBold.woff") format("woff2"), url("../fonts/Agrandir-TextBold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff");
+}
+
+* {
+    font-family: "Agrandir";
+}
+
+.poppins {
+    font-family: "Poppins";
+}
+
+.narrow {
+    font-family: "Agrandir-Narrow";
+}
+
+.narrow-bold {
+    font-family: "Agrandir-Narrow-Bold";
+}
+
+#filter {
+    background: url('../../public/images/achtergrond.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.blurred {
+    filter: blur(78.5px);
+}
+
+.card-line {
+    box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    background: #7E7E7E;
+}
+
+.card-line-blue {
+    border: 3px solid #6BC3FE;
+    border-radius: 50px;
+    background: #6BC3FE;
+    box-shadow: 0px 4px 23px rgba(107, 195, 254, 0.58);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card {
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.25);
+}
+
+.cart {
+    box-shadow: 0px 4px 16px 0.2px rgba(107, 195, 254, 0.47);
+}
+
+.cart:hover {
+    box-shadow: 0px 4px 16px 3px rgba(107, 195, 254, 0.47);
+    transition: box-shadow 0.4s;
+}
+
+.glow-hover:hover {
+    box-shadow: 0px 4px 16px 3px rgba(107, 195, 254, 0.47);
+    transition: box-shadow 0.4s;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.ticket-part {
+    box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.25);
+
+}
+
+#booking-section-text {
+    left: 484px; 
+    top: 140px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: white;
+    /* Not removed via appearance */
+  
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #6BC3FE;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+    margin-right: 8px;
+    margin-top: 3px;
+}
+  
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 300ms transform ease-in-out;
+    box-shadow: inset 1em 1em #6BC3FE;
+}
+  
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+#barcode-box {
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.25);
+}
+
+.input-shadow {
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.25);
+}
+
+img {
+    pointer-events: none;
+}
+
+/* About page */
+#hero {
+    background: url('../../public/images/about_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-background-2 {
+    background: url('../../public/images/about_background2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.booking-input-shadow {
+    box-shadow: 0px 4px 23px 1px rgba(107, 195, 254, 0.28);
+}
+
+.home-input-shadow {
+    box-shadow: 0px 4px 34px rgba(255, 255, 255, 0.25);
+}
+
+.black-button:hover {
+    background-color: white;
+    transition: background-color 0.4s, color 0.4s;
+    color: black;
+}
+
+.white-button:hover {
+    background-color: black;
+    transition: background-color 0.4s, color 0.4s;
+    color: white;
+    border: 2px solid black;
+}
+
+/* De classes moeten toegevoegd worden aan de buttons die de juiste Delta (Chevron bevatten) */
+
+.icon-button:hover #delta-up {
+    transform: translateY(-2px);
+    transition: transform 0.4s;
+}
+
+.icon-button:hover #delta-right {
+    transform: translatex(-2px);
+    transition: transform 0.4s;
+}
+
+.icon-button:hover #delta-corner {
+    transform: translate(2px, -2px);
+    transition: transform 0.4s;
+}
+
+#footer-text:hover {
+    color: black;
+    cursor: pointer;
+    transition: text-shadow 0.2s, color 0.3s;
+    text-shadow: -0.8px -0.8px 0 white, 0.8px -0.8px 0 white, -0.8px 0.8px 0 white, 0.8px 0.8px 0 white;
+}
+
+#locations-hero {
+    background: url('../../public/images/locations_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
