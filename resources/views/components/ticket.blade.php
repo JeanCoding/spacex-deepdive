@@ -1,3 +1,5 @@
+{{-- Flight Ticket for final booking page --}}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,6 +50,8 @@
                         </div>
                     </div>
                 </div>
+                
+                {{-- Barcode box bottom of the ticket --}}
                 <div>
                     <img src="{{ asset('/images/Rectanglem.svg') }}" class="mx-auto">
                     <div id="barcode-box" class="h-[38px] max-w-[414px] rounded bg-white relative p-5">
