@@ -5,7 +5,7 @@ const videoOverlay = document.querySelector('#video-overlay');
 const playButton = document.querySelector('#play-button');
 const video = document.querySelector('#video');
 
-// Voeg een eventlistener toe aan de afspeelknop
+// Voegt een eventlistener toe aan de afspeelknop
 if (playButton) {
     playButton.addEventListener('click', () => {
         videoOverlay.classList.toggle('hidden');
@@ -36,9 +36,9 @@ if (hideContinueButton) {
   });
 }
 
+// Haalt gradient element & cards op
 const cardsCount = document.querySelectorAll('.card');
 const gradient = document.querySelector('.blue-gradient'); 
-console.log(cardsCount.length); 
 
 if (cardsCount.length > 4) {
   gradient.classList.remove('hidden'); // Verwijder de klasse 'hidden' van het gradient-element als er meer dan 4 elementen zijn geselecteerd
